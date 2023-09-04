@@ -11,8 +11,6 @@ async function fetchMealsFromApi(url,value) {
     return meals;
 }
 
-
-
 // it shows all meals card in main acording to search input value
 //this function is called from index.html evertime the 'keyup' event happens
 //that's how we get updated results for every key press
@@ -68,7 +66,7 @@ function showListOfMeals(){
 
 
         } else {
-            //This will be code if the searched input is not found in mealDB API
+            //This will be the code if the searched input is not found in mealDB API
             //and below image will be displayed
             html += `
             <div class="page-wrap d-flex flex-row align-items-center">
@@ -85,8 +83,6 @@ function showListOfMeals(){
         document.getElementById("main").innerHTML = html;
     });
 }
-
-
 
 //it shows full meal details after clicking on details button
 async function showMealDetails(id) {
@@ -119,9 +115,6 @@ async function showMealDetails(id) {
     });
     document.getElementById("main").innerHTML=html;
 }
-
-
-
 
 // it shows all the favourite meals in favourites body
 async function showFavMealList() {
@@ -160,11 +153,6 @@ async function showFavMealList() {
     }
     document.getElementById("favourites-body").innerHTML=html;
 }
-
-
-
-
-
 
 //it adds and remove meals from & to the favourites list
 function addRemoveToFavList(id) {
