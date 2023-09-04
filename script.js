@@ -168,24 +168,34 @@ async function showFavMealList() {
 
 //it adds and remove meals from & to the favourites list
 function addRemoveToFavList(id) {
-    let arr=JSON.parse(localStorage.getItem("favouritesList"));
-    let contain=false;
+    let arr = JSON.parse(localStorage.getItem("favouritesList"));
+    let contain = false;
+
     for (let index = 0; index < arr.length; index++) {
-        if (id==arr[index]) {
-            contain=true;
+        if (id == arr[index]) {
+            contain = true;
         }
     }
+
     if (contain) {
         let number = arr.indexOf(id);
         arr.splice(number, 1);
 
+        // Show an alert indicating that the item has been removed
+        window.alert("Removed from Favorites!");
     } else {
         arr.push(id);
-    
+
+        // Show an alert indicating that the item has been added
+        window.alert("Added to Favorites!");
     }
-    localStorage.setItem("favouritesList",JSON.stringify(arr));
+
+    localStorage.setItem("favouritesList", JSON.stringify(arr));
+
+    // Refresh the lists on the UI
     showListOfMeals();
     showFavMealList();
 }
+
 
 
