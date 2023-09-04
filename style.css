@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* removing the padding and margin from all the elements using this wild card */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* setting text and background color for the body */
+body {
+    
+    width: 100%;
+    height: 100%;
+    color:white;
+    background: #e29f53;  
+    background: url('./static/png/Background\ gif.gif') center center/cover no-repeat;
+}
+
+/* header heading section */
+#heading {
+    margin-top: 100px;
+}
+
+
+/* header navigation bar shadow */
+#nav {
+    box-shadow: rgba(245, 75, 56, 0.25) 0px 50px 100px -20px, rgba(249, 14, 14, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color:#ef8854;
+}
+
+
+
+/* header search bar section */
+#search-bar {
+    max-width: 600px;
+}
+#search-bar input {
+    height: 50px;
+    border-radius: 20px;
+}
+
+
+/* setting glassmorphism for meal card */
+#card{
+    background-color: black;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+/* setting style for meal details container  */
+#meal-details{
+    width: 80%;
+    padding: 20px;
+    border-radius: 20px;
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    background: #e17532 url('./static/svg/wave2.svg') center center/cover no-repeat;
+}
+#meal-header{
+    width: 70%;
+    margin: auto;
+}
+#meal-thumbnail img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+#details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+}
+#meal-instruction{
+    margin: auto;
+    text-align: center;
+}
+
+
+/* favourites offcanvas  */
+#favourites-body{
+    background-color:#eea968 ;
+}
